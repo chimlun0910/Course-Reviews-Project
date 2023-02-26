@@ -1,6 +1,5 @@
 flask==2.2.3
 bs4==0.0.1
-logging
 undetected_chromedriver==3.4.6
 pymongo==4.3.3
 time
