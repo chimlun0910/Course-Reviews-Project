@@ -447,3 +447,7 @@ INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a
  * Running on http://127.0.0.1:5000
  * Running on http://10.0.228.208:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2023 00:46:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2023 00:46:53] "[37mGET /static/style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2023 00:46:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
