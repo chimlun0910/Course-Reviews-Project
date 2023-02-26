@@ -18,6 +18,7 @@ application = Flask(__name__)# initializing a flask app
 
 app = application
 
+@cross_origin()
 def CourseAccess(course_boxes, i, platform, reviews):
     try:
         course_product_link = "https://www.udemy.com" + course_boxes[i].div.find_all("div", {"class": "course-card--main-content--2XqiY course-card--has-price-text--1c0ze"})[0].h3.a["href"]
