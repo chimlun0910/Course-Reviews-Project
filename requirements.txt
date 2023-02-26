@@ -1,0 +1,9 @@
+flask
+bs4
+concurrent
+logging
+undetected_chromedriver
+pymongo
+time
+threading
+csv
