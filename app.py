@@ -6,7 +6,6 @@ import undetected_chromedriver as uc
 import pymongo
 import time
 import threading
-import concurrent
 import csv
 
 logging.basicConfig(filename = "scrapping.log", level = logging.INFO)
