@@ -1,7 +1,7 @@
-flask==2.2.3
-bs4==0.0.1
-undetected_chromedriver==3.4.6
-pymongo==4.3.3
+flask
+bs4
+undetected_chromedriver
+pymongo
 time
 threading
 csv
