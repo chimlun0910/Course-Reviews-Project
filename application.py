@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from bs4 import BeautifulSoup as bs
+from flask_cors import CORS,cross_origin
 import logging
 import undetected_chromedriver as uc
 import pymongo
@@ -60,10 +61,12 @@ def CourseAccess(course_boxes, i, platform, reviews):
         new_driver.quit()
 
 @app.route("/", methods = ["GET"])
+@cross_origin()
 def home_page():
     return render_template("index.html")
 
 @app.route("/search", methods = ["GET", "POST"])
+@cross_origin()
 def course_search():
     if request.method == "POST":
         logging.info("BEGIN SEARCH")
