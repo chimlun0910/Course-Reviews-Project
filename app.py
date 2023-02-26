@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from bs4 import BeautifulSoup as bs
-from concurrent.futures import ThreadPoolExecutor
 import logging
 import undetected_chromedriver as uc
 import pymongo
@@ -82,10 +81,6 @@ def course_search():
                 course_boxes = course_find_html.find_all('div', {'class':"popper-module--popper--2BpLn"})
                 del course_boxes[0:3]
                 reviews = []
-                # with ThreadPoolExecutor(max_workers = 10) as executor:
-                #     futures = [executor.submit(CourseAccess, course_boxes, i, platform, reviews) for i in range(3)]
-                #     done, not_done = concurrent.futures.wait(futures, return_when= concurrent.futures.ALL_COMPLETED)
-                #     executor.shutdown()
                 thread = [threading.Thread(target = CourseAccess, args = (course_boxes, i, platform, reviews)) for i in range(3)]
                 for t in thread:
                     t.start()
