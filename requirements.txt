@@ -1,6 +1,6 @@
 flask
 bs4
-concurrent
+concurrent==23.0.1
 logging
 undetected_chromedriver
 pymongo
