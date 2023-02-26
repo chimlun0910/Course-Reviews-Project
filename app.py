@@ -13,7 +13,7 @@ username = "ntuan0910"
 password = "031009"
 client = pymongo.MongoClient("mongodb+srv://{username}:{password}@coursereviewswebscrappi.giv3sed.mongodb.net/?retryWrites=true&w=majority".format(username = username, password = password))
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 
 def CourseAccess(course_boxes, i, platform, reviews):
     try:
